@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:contentDescription="@string/option_menu_cd"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_8dp">
+
+    <Button
+        android:id="@+id/create"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:contentDescription="@string/create_new_script_cd"
+        android:drawableStart="@drawable/ic_edit"
+        android:drawablePadding="@dimen/dimen_20dp"
+        android:gravity="start|center"
+        android:text="@string/create_new_script"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/upload"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/upload_new_script_cd"
+        android:drawableStart="@drawable/ic_file_upload"
+        android:drawablePadding="@dimen/dimen_20dp"
+        android:gravity="start|center"
+        android:text="@string/upload_from_gallery"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/delete_all"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/delete_all_scripts_cd"
+        android:drawableStart="@drawable/ic_delete"
+        android:drawablePadding="@dimen/dimen_20dp"
+        android:gravity="start|center"
+        android:text="@string/delete_all"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"/>
+</LinearLayout>

@@ -1,0 +1,238 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="true"
+    tools:context=".DetailsActivity">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar_det"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@android:color/transparent"
+            android:elevation="4dp"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:titleTextColor="@android:color/transparent" />
+
+        <ImageView
+            android:id="@+id/img_posterback"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <ImageView
+            android:id="@+id/img_thumb"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:transitionName="posterImg"
+            app:layout_constraintBottom_toBottomOf="@+id/img_posterback"
+            app:layout_constraintDimensionRatio="w,2:3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_posterback"
+            app:layout_constraintVertical_bias="0.49"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_movie_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toEndOf="@+id/img_thumb"
+            app:layout_constraintTop_toBottomOf="@+id/img_posterback" />
+
+        <TextView
+            android:id="@+id/movie_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/tv_movie_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_movie_title" />
+
+        <android.support.constraint.Barrier
+            android:id="@+id/barrier2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="movie_date,img_thumb"/>
+
+        <TextView
+            android:id="@+id/tv_overview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="@+id/barrier2" />
+
+        <android.support.constraint.Barrier
+            android:id="@+id/barrier4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="tv_overview" />
+
+        <Button
+            android:id="@+id/btn_booknow"
+            style="@style/buttondetails"
+            android:layout_width="112dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/ic_bookmark_border_black_24dp"
+            android:drawablePadding="3dp"
+            android:text="Book Now"
+            android:elevation="0dp"
+
+            app:layout_constraintEnd_toStartOf="@+id/btn_watchlist"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/barrier4" />
+
+        <Button
+            android:id="@+id/btn_watchlist"
+            style="@style/buttondetails"
+            android:layout_width="112dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/ic_playlist_add_black_24dp"
+            android:text="Watchlist"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_booknow"
+            app:layout_constraintTop_toTopOf="@+id/barrier4" />
+
+        <android.support.constraint.Barrier
+            android:id="@+id/barrier5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="btn_booknow,btn_watchlist"/>
+
+        <TextView
+            android:id="@+id/tv_moreInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="More Information"
+            android:textColor="@android:color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="@+id/barrier5" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="16dp" />
+
+        <TextView
+            android:id="@+id/tv_audioLang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Audio Language"
+            style="@style/Titledetails"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/tv_moreInfo" />
+
+        <TextView
+            android:id="@+id/tv_de_audiolang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="English"
+            android:textAllCaps="true"
+            style="@style/subtitledetails"
+            app:layout_constraintStart_toStartOf="@+id/tv_audioLang"
+            app:layout_constraintTop_toBottomOf="@+id/tv_audioLang" />
+
+        <TextView
+            android:id="@+id/tv_vote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Ratting"
+            style="@style/Titledetails"
+            app:layout_constraintStart_toStartOf="@+id/tv_de_audiolang"
+            app:layout_constraintTop_toBottomOf="@+id/tv_de_audiolang" />
+
+        <TextView
+            android:id="@+id/tv_de_vote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="3.7"
+            style="@style/subtitledetails"
+            app:layout_constraintStart_toStartOf="@+id/tv_vote"
+            app:layout_constraintTop_toBottomOf="@+id/tv_vote" />
+
+        <TextView
+            android:id="@+id/tv_Popular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Popularity"
+            style="@style/Titledetails"
+            app:layout_constraintStart_toStartOf="@+id/tv_de_vote"
+            app:layout_constraintTop_toBottomOf="@+id/tv_de_vote" />
+
+        <TextView
+            android:id="@+id/tv_de_popularity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="popular"
+            style="@style/subtitledetails"
+            app:layout_constraintStart_toStartOf="@+id/tv_Popular"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Popular" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="17dp" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

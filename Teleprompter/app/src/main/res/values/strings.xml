@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Teleprompter</string>
+
+    <string name="_0">0</string>
+    <string name="upload">UPLOAD</string>
+    <string name="delete">DELETE</string>
+    <string name="delete_all">DELETE ALL</string>
+    <string name="save">SAVE</string>
+    <string name="play">PLAY</string>
+    <string name="pause">PAUSE</string>
+    <string name="untitled">UNTITLED</string>
+
+    <string name="create_new_script">Create new script</string>
+    <string name="upload_from_gallery">Upload from gallery</string>
+    <string name="upload_to_drive">Upload to Google Drive</string>
+    <string name="delete_all_scripts">Delete all scripts</string>
+    <string name="delete_script">Delete script</string>
+    <string name="script_title">Script title</string>
+    <string name="script">Type your script here..</string>
+    <string name="appwidget_text">Oops! no scripts</string>
+    <string name="create_new_title">Create new script</string>
+    <string name="check_network">Please check your internet connection</string>
+    <string name="script_upload_success">Script uploaded successfully</string>
+    <string name="script_upload_failure">Unable to upload, try again!</string>
+    <string name="confirm_delete">Confirm Delete?</string>
+    <string name="confirm_delete_script">Are you sure you want to delete this script?</string>
+    <string name="confirm_delete_scripts">Are you sure you want to delete all the scripts?</string>
+    <string name="delete_positive">Yes, Delete</string>
+    <string name="delete_positive_all">Yes, Delete</string>
+    <string name="delete_negative">Cancel</string>
+    <string name="please_wait">Please wait..</string>
+
+    <!-- Content Description -->
+    <string name="scroll_speed_cd">Scroll speed indicator for indicating scrolling/reading speed.</string>
+    <string name="scroll_speed_val_cd">Scrolling/reading speed value.</string>
+    <string name="play_pause_cd">Play/Pase button to pause and play script in presentation mode.</string>
+    <string name="scroll_control_cd">Script control panel for controlling Reading speed and play/pause scrpt.</string>
+    <string name="script_presentation_card_cd">Script/presentation card item.</string>
+    <string name="time_item_cd">Time when script/presentation was last modified.</string>
+    <string name="title_item_cd">Script/Presentation title</string>
+    <string name="script_body_cd">Script/Presentation body contents.</string>
+    <string name="option_menu_cd">Create Scrip/Presentation options menu.</string>
+    <string name="create_new_script_cd">Create new script from typing option.</string>
+    <string name="upload_new_script_cd">Upload script from SD card option.</string>
+    <string name="delete_all_scripts_cd">Delete all scripts option.</string>
+    <string name="scripts_list_cd">List of scripts/ presentations.</string>
+    <string name="add_new_script_cd">Add new Script option.</string>
+    <string name="script_actual_cd">Script/presentation body content</string>
+    <string name="script_body_edit_cd">Script/presentation input</string>
+    <string name="presentation_cd">Present script</string>
+</resources>

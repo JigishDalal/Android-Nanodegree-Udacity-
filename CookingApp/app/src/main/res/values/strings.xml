@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">CookingApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Jigish Dalal</string>
+    <string name="nav_header_subtitle">jigishdalalAbc@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="recipe_des_string">so semifreddo as a combination with one of my favorite desserts Tiramisu sounded so wonderful in my mind that I made me equal to work, to test ever.</string>
+    <string name="recipe_author">by Angle </string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="timing">1h 20\'</string>
+    <string name="likes">968</string>
+    <string name="comment">100</string>
+    <string name="share">SHARE</string>
+    <string name="rate">RATE</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="follow_steps">Follow Steps</string>
+    <string name="open_steps_now">OPEN STEPS NOW</string>
+</resources>

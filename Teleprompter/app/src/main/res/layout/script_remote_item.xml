@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_8dp"
+    android:contentDescription="@string/script_presentation_card_cd"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/timeRemote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/time_item_cd"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/titleRemote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/title_item_cd"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/bodyRemote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/script_body_cd"
+        android:maxLines="3"
+        android:textSize="12sp"/>
+
+</LinearLayout>

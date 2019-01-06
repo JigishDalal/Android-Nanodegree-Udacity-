@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <!-- android:textColorSecondary is the color of the menu overflow icon (three vertical dots) -->
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+    
+    <style name="ItmeTitle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    
+    <style name="buttondetails" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:radius">5dp</item>
+    </style>
+
+
+    <style name="subtitledetails" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="Titledetails" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+
+    </style>
+
+    <!--android:fontFamily="sans-serif"-->
+    <!--android:textSize="18sp"-->
+    <!--android:textStyle="bold"-->
+
+
+
+</resources>

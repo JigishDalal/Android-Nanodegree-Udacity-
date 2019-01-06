@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.inc.thamsanqa.telepromptr.ui.MainActivity">
+    <item
+        android:id="@+id/action_play"
+        android:contentDescription="@string/presentation_cd"
+        android:icon="@drawable/ic_play"
+        android:orderInCategory="1"
+        android:title="@string/play"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_upload"
+        android:contentDescription="@string/upload_to_drive"
+        android:icon="@drawable/ic_file_upload"
+        android:orderInCategory="2"
+        android:title="@string/upload"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_delete"
+        android:contentDescription="@string/delete_script"
+        android:icon="@drawable/ic_delete"
+        android:orderInCategory="3"
+        android:title="@string/delete"
+        app:showAsAction="ifRoom"/>
+</menu>
